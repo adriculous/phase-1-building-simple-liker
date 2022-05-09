@@ -23,20 +23,12 @@ for (const btn of hearts) {
       })
 
       .catch((err) => {
-        // const error = document.querySelector('modal')
-        // const modal = document.querySelector('#modal-message')
         errSection.removeAttribute('class')
         errMsg.textContent = err
         setTimeout(() => { error.setAttribute('class', 'hidden') }, 3000)
       })
 
   })
-
-  /* const filledHearts = document.querySelector('.activated-heart')
-  filledHearts.addEventListener('click', () => {
-    filledHearts.textContent = EMPTY_HEART
-    filledHearts.className = 'like-glyph'
-  }) */
 }
 
 
